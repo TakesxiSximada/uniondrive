@@ -8,8 +8,8 @@ Windows FileSystem -> Storage Server -> Cloud Storage
 - Rename メタデータだけ変更
 
 
-- Dropbox
-- Google Drive
+- Dropbox (2GB)
+- Google Drive (15GB)
 - One Drive
 - Yahoo box
 - Box
@@ -37,3 +37,8 @@ Windows FileSystem -> Storage Server -> Cloud Storage
 - Uploadingit
 - OpenDrive
 - FINALBOX
+
+
+* driveの初期化
+* メタデータファイルの同期
+* sync
