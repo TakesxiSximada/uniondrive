@@ -1,10 +1,18 @@
 #! /usr/bin/env python
-import os
+"""
+filename: UUID/name.txt
+chunk:    UUID/0.chunk
+chunk:    UUID/1.chunk
+chunk:    UUID/2.chunk
+...
+
+"""
 import io
+import itertools
+import os
+import shutil
 import time
 import uuid
-import shutil
-import itertools
 
 import dropbox
 
