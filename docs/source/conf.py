@@ -1,18 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from zope.dottedname.resolve import resolve
 
 # -- General configuration ------------------------------------------------
 
 extensions = []
 templates_path = ['_templates']
+
+
+source_parsers = {
+    '.md': resolve('recommonmark.parser.CommonMarkParser'),
+    }
+source_suffix = ['.rst', '.md']
+
 source_suffix = '.rst'
 master_doc = 'index'
 project = 'uniondrive'
 copyright = '2016, TakesxiSximada'
 author = 'TakesxiSximada'
 
-version = '0.1'
-release = '0.1'
+release = resolve('{}.__version__'.format(project))
+version = '.'.join(release.split('.')[:2])
 language = None
 exclude_patterns = []
 pygments_style = 'sphinx'
